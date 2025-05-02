@@ -19,3 +19,26 @@ Python 3.12.3
 <img width="848" alt="image" src="https://github.com/user-attachments/assets/e0103499-0e4f-4b4c-985b-36fa1779473b" />
 
 <img width="602" alt="image" src="https://github.com/user-attachments/assets/e950fe09-bce0-482a-8be2-2e1d776975e8" />
+
+```
+PS C:\Users\Soumya Das\Documents\projects\git projects> .\venvdbt\Scripts\Activate.ps1
+(venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects> cd Airbnb
+(venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb> cd dbtlearn
+(venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb\dbtlearn> dbt run       
+21:54:24  Running with dbt=1.9.4
+21:54:25  Registered adapter: snowflake=1.9.0
+21:54:26  Unable to do partial parsing because saved manifest not found. Starting full parse.
+21:54:29  Found 1 model, 472 macros
+21:54:29
+21:54:29  Concurrency: 1 threads (target='dev')
+21:54:29
+21:54:34  1 of 1 START sql view model DEV.src_listings ................................... [RUN]
+21:54:35  1 of 1 OK created sql view model DEV.src_listings .............................. [SUCCESS 1 in 0.52s]     
+21:54:35
+21:54:35  Finished running 1 view model in 0 hours 0 minutes and 6.19 seconds (6.19s).
+21:54:35
+21:54:35  Completed successfully
+21:54:35
+21:54:35  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+(venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb\dbtlearn>
+```
