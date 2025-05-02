@@ -63,3 +63,26 @@ PS C:\Users\Soumya Das\Documents\projects\git projects> .\venvdbt\Scripts\Activa
 22:06:56  Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
 (venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb\dbtlearn> 
 ```
+
+```
+(venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb\dbtlearn> dbt run
+22:42:07  Running with dbt=1.9.4
+22:42:08  Registered adapter: snowflake=1.9.0
+22:42:09  Found 3 models, 472 macros
+22:42:09  
+22:42:09  Concurrency: 1 threads (target='dev')
+22:42:09
+22:42:10  1 of 3 START sql view model DEV.src_hosts ...................................... [RUN]
+22:42:11  1 of 3 OK created sql view model DEV.src_hosts ................................. [SUCCESS 1 in 0.48s]
+22:42:11  2 of 3 START sql view model DEV.src_listings ................................... [RUN]
+22:42:11  2 of 3 OK created sql view model DEV.src_listings .............................. [SUCCESS 1 in 0.28s]
+22:42:11  3 of 3 START sql view model DEV.src_reviews .................................... [RUN]
+22:42:11  3 of 3 OK created sql view model DEV.src_reviews ............................... [SUCCESS 1 in 0.24s]     
+22:42:12
+22:42:12  Finished running 3 view models in 0 hours 0 minutes and 2.19 seconds (2.19s).
+22:42:12
+22:42:12  Completed successfully
+22:42:12
+22:42:12  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+(venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb\dbtlearn>
+```
