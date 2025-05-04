@@ -24,6 +24,8 @@ PS C:\Users\Soumya Das\Documents\projects\git projects> .\venvdbt\Scripts\Activa
 
 ```
 
+![image](https://github.com/user-attachments/assets/11112469-d9c3-4566-aaf3-7e77c0ab686a)
+
 ```
 (venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb\dbtlearn> dbt run
 22:06:52  Running with dbt=1.9.4
