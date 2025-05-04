@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/df8ce249-0968-446c-9cba-4c3813fbc82e)
+
 ```
 PS C:\Users\Soumya Das\Documents\projects\git projects> .\venvdbt\Scripts\Activate.ps1
 (venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects> cd Airbnb
