@@ -1,5 +1,4 @@
 ```
-
 PS C:\Users\Soumya Das\Documents\projects\git projects> .\venvdbt\Scripts\Activate.ps1
 (venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects> cd Airbnb
 (venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb> cd dbtlearn
@@ -20,11 +19,9 @@ PS C:\Users\Soumya Das\Documents\projects\git projects> .\venvdbt\Scripts\Activa
 21:54:35
 21:54:35  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
 (venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb\dbtlearn>
-
 ```
 
 ```
-
 (venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb\dbtlearn> dbt run
 22:06:52  Running with dbt=1.9.4
 22:06:53  Registered adapter: snowflake=1.9.0
@@ -43,11 +40,9 @@ PS C:\Users\Soumya Das\Documents\projects\git projects> .\venvdbt\Scripts\Activa
 22:06:56
 22:06:56  Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
 (venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb\dbtlearn> 
-
 ```
 
 ```
-
 (venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb\dbtlearn> dbt run
 22:42:07  Running with dbt=1.9.4
 22:42:08  Registered adapter: snowflake=1.9.0
@@ -68,6 +63,5 @@ PS C:\Users\Soumya Das\Documents\projects\git projects> .\venvdbt\Scripts\Activa
 22:42:12
 22:42:12  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
 (venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb\dbtlearn>
-
 ```
 
