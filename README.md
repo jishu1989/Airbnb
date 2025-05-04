@@ -20,6 +20,8 @@ Python 3.12.3
 
 <img width="602" alt="image" src="https://github.com/user-attachments/assets/e950fe09-bce0-482a-8be2-2e1d776975e8" />
 
+![image](https://github.com/user-attachments/assets/617d6ad1-7348-4a31-aef9-f6c522ee2d9a)
+
 ![image](https://github.com/user-attachments/assets/a7751c0c-83d4-415f-876d-a2c741b3651e)
 
 
