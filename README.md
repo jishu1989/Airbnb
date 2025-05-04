@@ -112,3 +112,5 @@ PS C:\Users\Soumya Das\Documents\projects\git projects> .\venvdbt\Scripts\Activa
 06:49:25
 06:49:25  Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
 ```
+<img width="149" alt="image" src="https://github.com/user-attachments/assets/95f0ec82-8f19-49d0-9078-40439d50ff29" />
+
