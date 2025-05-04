@@ -1,4 +1,4 @@
-````
+```
 
 PS C:\Users\Soumya Das\Documents\projects\git projects> .\venvdbt\Scripts\Activate.ps1
 (venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects> cd Airbnb
@@ -21,7 +21,7 @@ PS C:\Users\Soumya Das\Documents\projects\git projects> .\venvdbt\Scripts\Activa
 21:54:35  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
 (venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb\dbtlearn>
 
-````
+```
 
 ```
 
