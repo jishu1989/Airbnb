@@ -1,6 +1,6 @@
 
-
 ```
+
 PS C:\Users\Soumya Das\Documents\projects\git projects> .\venvdbt\Scripts\Activate.ps1
 (venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects> cd Airbnb
 (venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb> cd dbtlearn
