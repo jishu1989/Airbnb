@@ -6,6 +6,7 @@ Pros:
 - You can still write reusable logic
 - Ephemeral models can help keep your data warehouse clean by reducing clutter (also consider splitting your models across 
   multiple schemas by using custom schemas).
+
 Cons:
 - You cannot select directly from this model.
 - Operations (for example, macros called using dbt run-operation cannot ref() ephemeral nodes)
