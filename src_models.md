@@ -1,7 +1,29 @@
+#### Source Models: 
+Source models use CTEs to reference raw tables.  
+
 ![image](https://github.com/user-attachments/assets/77d1da9d-74e8-4eb3-9906-255590f6acee)
 
 
 ![image](https://github.com/user-attachments/assets/df8ce249-0968-446c-9cba-4c3813fbc82e)
+
+In the below transformation we change the id -> listing_id and name -> listing_name, and price-> price_str.
+```
+-- import raw_listings
+WITH raw_listings AS (
+        SELECT * FROM AIRBNB.RAW.RAW_LISTINGS
+)
+SELECT 
+   id AS listing_id,
+   listing_url,
+   name AS listing_name,
+   room_type,
+   minimum_nights,
+   host_id,
+   price AS price_str,
+   created_at,
+   updated_at
+FROM raw_listings
+```
 
 ```
 PS C:\Users\Soumya Das\Documents\projects\git projects> .\venvdbt\Scripts\Activate.ps1
@@ -31,6 +53,20 @@ PS C:\Users\Soumya Das\Documents\projects\git projects> .\venvdbt\Scripts\Activa
 
 ![image](https://github.com/user-attachments/assets/a8e62a2e-aa22-4f79-83c3-8209b860f4d9)
 
+Here also we put alias date -> review_date, sentiment -> review_sentiments, comments -> review_text.
+```
+WITH raw_reviews AS (
+      SELECT * FROM AIRBNB.RAW.RAW_REVIEWS    
+)
+SELECT
+listing_id,
+date as review_date,
+reviewer_name,
+comments as review_text,
+sentiment as review_sentiments
+FROM raw_reviews
+```
+
 ```
 (venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb\dbtlearn> dbt run
 22:06:52  Running with dbt=1.9.4
@@ -56,6 +92,19 @@ PS C:\Users\Soumya Das\Documents\projects\git projects> .\venvdbt\Scripts\Activa
 
 ![image](https://github.com/user-attachments/assets/12480567-7c07-4274-b5d3-ed82896b63b1)
 
+```
+WITH raw_hosts as(
+     SELECT * FROM AIRBNB.RAW.RAW_HOSTS
+)
+SELECT
+id as host_id,
+name as host_name,
+is_superhost,
+created_at,
+updated_at
+FROM raw_hosts
+```
+Here we transform id -> host_id, name -> host_name.
 
 ``` 
 (venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb\dbtlearn> dbt run
