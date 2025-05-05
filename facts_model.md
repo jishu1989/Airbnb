@@ -1,4 +1,4 @@
-#### Facts Table
+#### Fact Table
 
 Fact tables store measurable, quantitative data for analysis. It usually contains
 metrics (facts) like sales amount, number of units sold, profit, etc. Facts table keeps on
