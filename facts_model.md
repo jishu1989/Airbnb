@@ -1,4 +1,12 @@
-#### Facts Model
+#### Facts Table
+
+Fact tables store measurable, quantitative data for analysis. It usually contains
+metrics (facts) like sales amount, number of units sold, profit, etc. Facts table keeps on
+growing regularly and have incremental loads. i.e Everyday new data is added to the table.
+
+In this case we have review as our fact table, comments from various customers for their stays
+in different airbnbs. Listing id connects us to various stays and their comments on different
+stays.
 
 ![image](https://github.com/user-attachments/assets/f71362c9-3998-4e91-ab37-b246c086ce30)
 
