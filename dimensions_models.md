@@ -44,6 +44,29 @@ FROM
 ```
 And we materialize these as views..
 
+Below we add constraints so that it removes the null values from host name...
+
+```
+WITH src_hosts AS (
+    SELECT
+        *
+    FROM
+        {{ ref('src_hosts') }}
+)
+SELECT
+    host_id,
+    NVL(
+        host_name,
+        'Anonymous'
+    ) AS host_name,
+    is_superhost,
+    created_at,
+    updated_at
+FROM
+    src_hosts
+```
+
+
 ```
 (venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb\dbtlearn> dbt run
 06:49:12  Running with dbt=1.9.4
