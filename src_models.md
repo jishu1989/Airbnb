@@ -1,6 +1,8 @@
 #### Source Models: 
 Source models use CTEs to reference raw tables.  
 
+#### LISTINGS
+
 ![image](https://github.com/user-attachments/assets/77d1da9d-74e8-4eb3-9906-255590f6acee)
 
 
@@ -51,6 +53,8 @@ PS C:\Users\Soumya Das\Documents\projects\git projects> .\venvdbt\Scripts\Activa
 
 ![image](https://github.com/user-attachments/assets/11112469-d9c3-4566-aaf3-7e77c0ab686a)
 
+#### REVIEWS
+
 ![image](https://github.com/user-attachments/assets/a8e62a2e-aa22-4f79-83c3-8209b860f4d9)
 
 Here also we put alias date -> review_date, sentiment -> review_sentiments, comments -> review_text.
@@ -89,6 +93,8 @@ FROM raw_reviews
 
 ```
 ![image](https://github.com/user-attachments/assets/bdf044d8-9ca6-4ea3-98bd-e1c73a8a8dd7)
+
+#### HOSTS
 
 ![image](https://github.com/user-attachments/assets/12480567-7c07-4274-b5d3-ed82896b63b1)
 
