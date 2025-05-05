@@ -1,7 +1,18 @@
 # About
-Analytics Engineering approach towards Hospitality and Homestays industry
+This project is an analytics engineering approach towards Hospitality and Homestays industry. We use
+**D**ata **B**uild **T**ool or **dbt** to transform our data in warehouses. We have data from Airbnb
+about their hosts, about the listings which means the hotels or stays: their price, room type, host_id,
+price, etc. We first set up our snowflake to obtain the raw data: 
+https://github.com/jishu1989/complete-dbt-bootcamp-zero-to-hero/blob/main/_course_resources/course-resources.md 
+and connect snowflake to dbt for modelling and transformation. 
 
 # Setting Up Virtual Environment for dbt
+
+It is very important to create virtual environments. One of them being dependency management for instance by default my
+system has python 3.7 version. But for dbt it requires minimum of more than python version 3.9-3.12. I am using 3.12.3.
+Also using helps in system integrity, installing dbt would have cluttered, therefore dbt virtual environment will also
+help in creating other projects in dbt.
+
 ```
 PS C:\Users\Soumya Das\Documents\projects\git projects> py -m venv venvdbt
 PS C:\Users\Soumya Das\Documents\projects\git projects> .\venvdbt\Scripts\Activate.ps1
@@ -22,6 +33,11 @@ Python 3.12.3
 <img width="602" alt="image" src="https://github.com/user-attachments/assets/e950fe09-bce0-482a-8be2-2e1d776975e8" />
 
 # Data Modelling 
+
+Our target is to create dimension and fact tables from the raw tables. In between are the source tables which has some
+degree of changes from the raw tables , f.e renaming the name of the columns. While creating dimension and fact tables 
+we add more constraints to our models. But the visual representation of our modelling plan is as follows:
+
 
 ![image](https://github.com/user-attachments/assets/617d6ad1-7348-4a31-aef9-f6c522ee2d9a)
 
