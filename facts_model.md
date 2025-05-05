@@ -6,11 +6,13 @@ growing regularly and have incremental loads. i.e Everyday new data is added to 
 
 In this case we have review as our fact table, comments from various customers for their stays
 in different airbnbs. Listing id connects us to various stays and their comments on different
-stays.
+stays. 
 
 ![image](https://github.com/user-attachments/assets/f71362c9-3998-4e91-ab37-b246c086ce30)
 
 ![image](https://github.com/user-attachments/assets/62fe8d14-cf50-4566-9547-814d6d3263b6)
+
+NOTE: **this** refers to the model *fct_reviews.sql* (in the above fig.)
 
 ![image](https://github.com/user-attachments/assets/6911e3d4-6bfb-4399-9b41-cba114dded00)
 
