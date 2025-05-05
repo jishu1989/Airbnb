@@ -14,9 +14,16 @@ stays.
 
 NOTE: **this** refers to the model *fct_reviews.sql* (in the above fig.)
 
+In the fig. below, we try to populate a new row in the raw table.
+
 ![image](https://github.com/user-attachments/assets/6911e3d4-6bfb-4399-9b41-cba114dded00)
 
+And still the fact table is not yet updated...
+
 ![image](https://github.com/user-attachments/assets/72934a7b-a1e4-4b4d-ae36-65c52a25f765)
+
+After running this dbt incremental run, the fact table is also populated with the single
+row that we entered in the raw table. 
 
 ```
 (venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb\dbtlearn> dbt run
