@@ -2,7 +2,8 @@
 This project is an analytics engineering approach towards Hospitality and Homestays industry. We use
 **D**ata **B**uild **T**ool or **dbt** to transform our data in warehouses. We have data from Airbnb
 about their hosts, about the listings which means the hotels or stays: their price, room type, host_id,
-price, etc. We first set up our snowflake to obtain the raw data: 
+price, etc. Also feedback from the host which is in review table.
+We first set up our snowflake to obtain the raw data: 
 https://github.com/jishu1989/complete-dbt-bootcamp-zero-to-hero/blob/main/_course_resources/course-resources.md 
 and connect snowflake to dbt for modelling and transformation. 
 
