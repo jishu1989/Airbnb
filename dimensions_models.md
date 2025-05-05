@@ -1,9 +1,48 @@
 #### Dimension Tables
 
+**What are dimension tables ?**
+
+Dimension tables usually consists of attributes (fields) that describe "who," "what," "where," "when," and "how."
+It stores descriptive (contextual) information about the business. Below we intend to clean the dimension tables
+and create a dimension table from listings and host. 
+
 ![image](https://github.com/user-attachments/assets/1033c23d-a208-4512-8ed4-9a9cbaa63019)
 
 
 ![image](https://github.com/user-attachments/assets/8853b693-a0a2-4263-b00c-86fae206f1fe)
+
+Below are the listings materializations for the dimensional models. Models are the building blocks for business
+logics. Materialized as tables, views, etc. Some of the logics we add are for example:
+
+Minimum nights = 0 are turned to 1 and price_str we remove the $ and convert it into number
+
+```
+WITH src_listings AS (
+    SELECT * FROM {{ ref('src_listings') }}
+)
+SELECT 
+  listing_id,
+  listing_name,
+  room_type,
+  CASE
+    WHEN minimum_nights = 0 THEN 1
+    ELSE minimum_nights
+  END AS minimum_nights,
+  host_id,
+  REPLACE(
+    price_str,
+    '$'
+  ) :: NUMBER(
+    10,
+    2
+  ) AS price,
+  created_at,
+  updated_at
+FROM
+  src_listings
+
+```
+And we materialize these as views..
 
 ```
 (venvdbt) PS C:\Users\Soumya Das\Documents\projects\git projects\Airbnb\dbtlearn> dbt run
@@ -30,6 +69,8 @@
 06:49:25
 06:49:25  Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
 ```
+Here we add the constraint how to create dbt_project.yml -> there by materializing as tables
+
 ![image](https://github.com/user-attachments/assets/c744f97f-2869-4e3b-8f21-367841af0760)
 
 ![image](https://github.com/user-attachments/assets/7e8d6743-3377-418e-9022-4dab9f9894d2)
