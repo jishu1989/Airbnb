@@ -1,3 +1,4 @@
+venvdbt/
 data/
 *.csv
 *.parquet
